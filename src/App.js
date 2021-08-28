@@ -33,7 +33,7 @@ async fetchAllMessages(){
     moment.locale('en');
     return <div className="App">
 
-    <Statistic.Group widths='three' className='statistics'>
+    <Statistic.Group widths='one' className='statistics'>
       <Statistic>
         <Statistic.Value>
         <Icon name='envelope' />
@@ -42,7 +42,7 @@ async fetchAllMessages(){
         <Statistic.Label>Total messages</Statistic.Label>
       </Statistic>
 
-      <Statistic>
+      {/* <Statistic>
         <Statistic.Value>
         <Icon name='calendar alternate' />
           {this.state.lastMonthCount}
@@ -56,7 +56,7 @@ async fetchAllMessages(){
           {this.state.lastDayCount}
         </Statistic.Value>
         <Statistic.Label>Messages last 24h</Statistic.Label>
-      </Statistic>
+      </Statistic> */}
     </Statistic.Group>
 
     {this.state.showLoader ? 
